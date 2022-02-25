@@ -93,37 +93,37 @@ public class MarkdownParseTest {
 
 
     //Lab report 4 - week 8
-    @Test
-    public void labTestOne() throws IOException {
-        Path fileName = Path.of("lab-test-file1.md");
-        String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
+    // @Test
+    // public void labTestOne() throws IOException {
+    //     Path fileName = Path.of("lab-test-file1.md");
+    //     String contents = Files.readString(fileName);
+    //     ArrayList<String> links = MarkdownParse.getLinks(contents);
 
-        List<String> correctOutput = List.of("`google.com");
+    //     List<String> correctOutput = List.of("`google.com");
 
-        assertEquals(correctOutput, links);
-    }
+    //     assertEquals(correctOutput, links);
+    // }
 
-    @Test
-    public void labTestTwo() throws IOException {
-        Path fileName = Path.of("lab-test-file1.md");
-        String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
+    // @Test
+    // public void labTestTwo() throws IOException {
+    //     Path fileName = Path.of("lab-test-file1.md");
+    //     String contents = Files.readString(fileName);
+    //     ArrayList<String> links = MarkdownParse.getLinks(contents);
 
-        List<String> correctOutput = List.of("a.com", "a.com(())",
-            "example.com");
+    //     List<String> correctOutput = List.of("a.com", "a.com(())",
+    //         "example.com");
 
-        assertEquals(correctOutput, links);
-    }
+    //     assertEquals(correctOutput, links);
+    // }
 
-    @Test
-    public void labTestThree() throws IOException {
-        Path fileName = Path.of("lab-test-file2.md");
-        String contents = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(contents);
+    // @Test
+    // public void labTestThree() throws IOException {
+    //     Path fileName = Path.of("lab-test-file2.md");
+    //     String contents = Files.readString(fileName);
+    //     ArrayList<String> links = MarkdownParse.getLinks(contents);
 
-        List<String> correctOutput = List.of("https://ucsd-cse15l-w22.github.io/");
+    //     List<String> correctOutput = List.of("https://ucsd-cse15l-w22.github.io/");
 
-        assertEquals(correctOutput, links);
-    }
+    //     assertEquals(correctOutput, links);
+    // }
 }
